@@ -1,0 +1,32 @@
+PETRUSCA BOGDAN-MIHAI
+323CB
+
+Voi incepe README-ul prin explicarea functiei "Parcurgere".
+
+Dupa ce extrag  nodul curent din stiva, verific informatia din el (cu ajutorul 
+functiei "verifCaract"). In cazul in care este caracter(- + / *) verific daca
+copiii sunt numere (cu ajutorul functiei "verifCaract"). In cazul in care sunt
+intru in functia "Operatie", careia ca argument nodul curent. Dupa ce extrag
+nodul din stiva pun in ecx si edx copiii nodului respectiv si ii convertesc la
+int cu ajutorul functiei myAtoi. Dupa aceea verific ce caracter se afla in nod
+si fac operatia aferenta. Rezultatul operatiei se va afla in eax. Dupa aceea
+convertesc rezultatul din int in string (cu ajutorul functiei "intToChar") si
+pun stringul rezultat in locul informatiei din nod.
+
+Dupa ce fac acest lucru ma intorc in functia "Parcurgere" si parcurg arborele in
+preordine.
+
+Trebuie mentionat ca fac aceeasi pasi de mai sus si dupa ce ies din recursivitate 
+pentru a face toate calculele.
+
+- Functia "myAtoi":
+	Pentru a face conversia de la string la int intai verific daca primul caracter
+este 0. In cazul in care este, elimin minusul din string iar dupa aceea scad din 0
+numarul convertit in int pentru a-l face negativ. Pentru a converti stringul parcurg
+caracter cu caracter. Scad din caracter pe '0' pentru a-l face int si dupa aceea construiesc
+numarul.
+
+- Functia "intToChar":
+	Pentru a face aceasta conversie intai verific daca numarul este negativ. In cazul
+este, pun minus pe prima pozitie din char*. Dupa aceea exrag ultima cifra din numar si o 
+pun la adresa corespunzatoare.
